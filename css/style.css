@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+
+  --normal: 400;
+  --bold: 700;
+  --poppings: "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: url(../images/bg-intro-mobile.png);
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  font-family: var(--poppings);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.principal-info {
+  text-align: center;
+  margin: 0 auto;
+}
+.title {
+  font-size: 3rem;
+  margin: 2rem 0 0 0;
+}
+.info {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.trial {
+  background-color: var(--blue);
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+.trial a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 2rem;
+  font-weight: var(--bold);
+}
+
+.price {
+  display: block;
+  line-height: 2.5rem;
+  color: var(--grayish-blue);
+  font-weight: var(--normal);
+}
+.grayish {
+  color: var(--grayish-blue);
+  font-weight: var(--normal);
+}
+.form {
+  padding: 1.6rem;
+  background: white;
+  border-radius: 1rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.2rem;
+  border: solid 1px rgb(219, 212, 212);
+}
+.form input::placeholder {
+  font-weight: var(--bold);
+  font-size: 1.4rem;
+}
+
+input.claim-button {
+  background-color: var(--green);
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 1.4rem;
+  /* height: 4rem; */
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.terms {
+  color: var(--grayish-blue);
+  margin: 0 2.1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.terms span {
+  display: inline-block;
+  color: var(--red);
+  font-weight: var(--bold);
+}
+
+.terms span:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 475px) {
+  body {
+    background: url(../images/bg-intro-desktop.png);
+    background-color: var(--red);
+    background-repeat: no-repeat;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+  }
+}
